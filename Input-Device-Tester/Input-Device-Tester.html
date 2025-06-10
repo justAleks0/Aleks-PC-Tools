@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Device Tester - Aleks PC Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="https://justaleks0.github.io/Aleks-PC-Tools/" class="home-link">Aleks PC Tools</a>
+    </header>
+
+    <main>
+        <section class="title-section">
+            <h1>Input Device Tester</h1>
+            <p class="subtitle">Track your keyboard and mouse inputs in real time.</p>
+        </section>
+
+        <div class="panels">
+            <section class="panel keyboard-panel">
+                <h2>Keyboard Input</h2>
+                <div class="keyboard-display">
+                    <div id="active-keys">No keys pressed</div>
+                    <div class="key-log-container">
+                        <h3>Key Press Log</h3>
+                        <div id="key-log" class="key-log"></div>
+                    </div>
+                </div>
+                <div class="typing-tester">
+                    <h3>Sentence Typing Tester</h3>
+                    <textarea 
+                        id="typing-area" 
+                        placeholder="Type here to test your keyboard..."
+                    ></textarea>
+                    <div class="typing-stats">
+                        <span id="char-count">Characters: 0</span>
+                        <span id="word-count">Words: 0</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel mouse-panel">
+                <h2>Mouse Input</h2>
+                <div class="mouse-display">
+                    <div id="mouse-position">Position: X: 0, Y: 0</div>
+                    <div id="mouse-clicks">Click events will appear here</div>
+                    <div id="scroll-info">Scroll events will appear here</div>
+                </div>
+            </section>
+        </div>
+
+        <section class="info-section">
+            <p>Useful for testing keyboard layouts, mouse inputs, or diagnosing hardware issues.</p>
+        </section>
+
+        <a href="https://justaleks0.github.io/Aleks-PC-Tools/" class="back-link">← Back to Tools</a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
